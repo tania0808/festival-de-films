@@ -39,13 +39,13 @@
 
           '2xl': '1536px',
           // => @media (min-width: 1536px) { ... }
-        },
+        }
       }
     }
   </script>
 </head>
 <body class="font-display">
-<nav class="bg-white border-gray-200">
+<nav class="border-gray-200 bg-gray-50">
   <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
     <a href="../index.html" class="flex items-center">
       <img src="../img/logo.svg" class="h-6 w-6 mr-3" alt="Festival Logo" />
@@ -63,13 +63,10 @@
           <a href="../index.html" class="block py-2 pl-3 pr-4 text-black bg-blue-700 rounded md:bg-transparent md:p-0">Accueil</a>
         </li>
         <li class="font-bold">
-          <a href="../index.html#programmation" class="block py-2 pl-3 pr-4 text-black rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-bluePrimary md:p-0">Programmation</a>
-        </li>
-        <li class="font-bold">
           <a href="../index.html#actualités" class="block py-2 pl-3 pr-4 text-black rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-bluePrimary md:p-0">Actualités</a>
         </li>
         <li class="font-bold">
-          <a href="../pages/access.html" class="md:text-bluePrimary block py-2 pl-3 pr-4 text-black rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-bluePrimary md:p-0">Infos & Accès</a>
+          <a href="../pages/access.html" class="md:text-black block py-2 pl-3 pr-4 text-black rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-bluePrimary md:p-0">Infos & Accès</a>
         </li>
         <li class="font-bold">
           <a href="../pages/contact.html" class="block py-2 pl-3 pr-4 text-black rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-bluePrimary md:p-0">Contact</a>
@@ -85,62 +82,25 @@
     </div>
   </div>
 </nav>
-<div class="p-6">
-  <form class="max-w-md mx-auto bg-white rounded-lg shadow-md p-8">
-    <h2 class="text-2xl font-bold mb-4">Réservation de séance de film</h2>
-    <div class="mb-4">
-      <label class="block text-gray-700 font-bold mb-2" for="name">Nom complet</label>
-      <input class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="name" type="text" placeholder="Entrez votre nom complet">
+<section class="flex flex-wrap items-center  my-auto font-sans px-4 mx-auto w-full lg:max-w-screen-lg sm:max-w-screen-sm md:max-w-screen-md py-20">
+  <div class="px-3 w-full lg:w-2/5">
+    <div class="mx-auto mb-8 max-w-lg text-center lg:mx-0 lg:max-w-md lg:text-left">
+      <h2 class="mb-4 text-2xl font-bold text-left lg:text-5xl">
+        Votre séance de
+        <span class="text-5xl text-bluePrimary">FILM</span>
+        a été réservée avec succès !
+      </h2>
+      <p class="visible mx-0 mt-3 mb-0 text-sm leading-relaxed text-left text-slate-400">
+        Merci pour votre réservation !
+      </p>
     </div>
-    <div class="mb-4">
-      <label class="block text-gray-700 font-bold mb-2" for="email">Adresse e-mail</label>
-      <input class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="email" type="email" placeholder="Entrez votre adresse e-mail">
+  </div>
+  <div class="px-3 mb-12 w-full lg:mb-0 lg:w-3/5">
+    <div class="flex justify-center items-center">
+      <img src="../img/confirmation.png" alt="">
     </div>
-    <div class="mb-4">
-      <label class="block text-gray-700 font-bold mb-2" for="movie">Film</label>
-      <select class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="movie">
-        <option value="">Sélectionnez un film</option>
-        <option value="soul">Soul</option>
-        <option value="Top Gun: Maverick">Top Gun: Maverick</option>
-        <option value="Avatar : la voie de l'eau">Avatar : la voie de l'eau</option>
-        <option value="Pinocchio par Guillermo del Toro">Pinocchio par Guillermo del Toro</option>
-        <option value="Elvis">Elvis</option>
-        <option value="As bestas">As bestas</option>
-        <option value="Presque">Presque</option>
-        <option value="En corps">En corps</option>
-        <option value="Le Monde d'après">Le Monde d'après</option>
-      </select>
-    </div>
-    <div class="mb-4">
-      <label class="block text-gray-700 font-bold mb-2" for="movie">Date de la séance</label>
-      <select class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="date">
-        <option value="">Sélectionnez une date</option>
-        <option value="samedi">Samedi 5 aout</option>
-        <option value="dimanche">Dimanche 6 aout</option>
-        <option value="lundi">Lundi 7 aout</option>
-        <option value="mardi">Mardi 7 aout</option>
-      </select>
-    </div>
-    <div class="mb-4">
-      <label class="block text-gray-700 font-bold mb-2" for="movie">Heure de la séance</label>
-      <select class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="hour">
-        <option value="">Sélectionnez une heure</option>
-        <option value="19h30">19h30</option>
-        <option value="21h00">21h00</option>
-        <option value="21h00">22h30</option>
-      </select>
-    </div>
-    <div class="mb-4">
-      <label class="block text-gray-700 font-bold mb-2" for="quantity">Nombre de places</label>
-      <input class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="quantity" type="number" min="1" max="10" value="1">
-    </div>
-    <div class="flex items-center justify-center">
-      <a href="../pages/reservation-confirm.html" class="bg-bluePrimary hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="submit">
-        Réserver
-      </a>
-    </div>
-  </form>
-</div>
+  </div>
+</section>
 <footer class="bg-gray-50 ">
   <div class="p-4 py-6 mx-auto max-w-screen-xl md:p-8 lg:p-10">
     <div class="grid grid-cols-2 gap-8 md:grid-cols-3 lg:grid-cols-5">
